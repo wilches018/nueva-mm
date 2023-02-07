@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <br>
+
+    <div class="container">
+        <div class="netsh">
+            <form id="Formulario" action="" class="forma">
+                <div class="inputContainer">
+
+                    <h1 class="title"> Formulario</h1>
+                    <h2><label for="name">ID</label></h2>
+                    <input id="id" type="text" placeholder="INGRESAR ID" class="form-cotrol my-2">
+
+                </div>
+                <div class="inputContainer">
+
+                    <h2><label for="apellido">NOMBRE</label></h2>
+                    <input id="nombre" type="text" placeholder="INGRESAR NOMBRE" class="form-cotrol my-2">
+
+                </div>
+                <div class="inputContainer">
+
+                    <h2><label for="telefono">APELLIDO</label></h2>
+                    <input id="apellido" type="text" placeholder="INGRESAR APELLIDO" class="form-cotrol my-2">
+                    <br>
+                    <br>
+                    <br>
+                    <table id="table" class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">NOMBRE</th>
+                            <th scope="col">APELLIDO</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody id="add">
+                          
+
+                          
+                        </tbody>
+                      </table>
+                    <br>
+                    <br>
+                    <br>
+                    <button id="boton" onclick="guardar('los datos ya estan guardados')" type="button"
+                        class="btn btn-primary">guardar</button>
+                    <button id="boton" onclick="limpiarformulario('se limpio correctamente')" type="button"
+                        class="btn btn-primary">limpiarformulario</button>
+                    <button id="boton" onclick="eliminarcualquifila()" type="button" class="btn btn-primary" value="eliminar">eliminar
+                        cualquiera</button>
+                    <button id="boton" onclick="buscar()" type="button" class="btn btn-primary">buscar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="js/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</html>
