@@ -42,3 +42,29 @@ td,
 th {
   border: black 1px solid;
 }
+table {
+  width: 100%;
+  caption-side: bottom;
+  border-collapse: collapse;
+  vertical-align: top;
+  }
+  
+  table * {
+  padding: 0.2rem 0.1rem;
+  border: 1px solid #777
+  }
+  
+  table tr:nth-of-type(odd) {
+  background-color: #ccc
+  }
+  #content{
+    position: absolute;
+    min-height: 50%;
+    width: 80%;
+    top: 20%;
+    left: 5%;
+  }
+  .searchTerm{
+    position: absolute;
+    right: 23%;
+  }
