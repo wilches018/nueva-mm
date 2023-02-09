@@ -94,6 +94,6 @@ function deleteRows(){
 		rowCount--;
 	}
 	else{
-		alert('Debe aver almenos una fila');
+		alert('Debe aver almenos una fila xd');
 	}
 }
