@@ -39,13 +39,13 @@
                     <table id="datos" class="table table-striped">
                         <thead>
                             <tr>
-                                <th  scope="col">ID</th>
-                                <th  scope="col">NOMBRE</th>
-                                <th  scope="col">APELLIDO</th>
+                                <th scope="col">ID</th>
+                                <th scope="col">NOMBRE</th>
+                                <th scope="col">APELLIDO</th>
                             </tr>
                         </thead>
                         <tbody id="add">
-                            
+
                         </tbody>
                     </table>
                     <br>
@@ -54,8 +54,12 @@
                     <br>
                     <button id="botton" onclick="guardar('los datos ya estan guardados')" type="button"
                         class="btn btn-primary">guardar</button>
+                        <button id="botton" onclick="deleteRows('se a eliminado correctamente')" type="button"
+                        class="btn btn-primary">eliminar</button><br>
+                        <br>
                     <button id="botton" onclick="limpiarformulario('se limpio correctamente')" type="button"
                         class="btn btn-primary">limpiarformulario</button><br>
+                        
                     <br>
                     <br>
                     Buscar <input id="searchTerm" type="text" onkeyup="doSearch()" />

@@ -86,3 +86,14 @@ function doSearch() {
         th.innerHTML = "No se han encontrado coincidencias";
     }
 }
+function deleteRows(){
+	var table = document.getElementById('datos');
+	var rowCount = table.rows.length;
+	if(rowCount > '1'){
+		var row = table.deleteRow(rowCount-1);
+		rowCount--;
+	}
+	else{
+		alert('Debe aver almenos una fila');
+	}
+}
