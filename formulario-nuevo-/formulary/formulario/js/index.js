@@ -1,5 +1,5 @@
 var row = "";
-function guardar(texto) {
+function guardar() {
 
     const id = document.getElementById('id');
     const nombre = document.getElementById('nombre');
@@ -27,9 +27,9 @@ function doSearch() {
     const searchText = document.getElementById("searchTerm").value.toLowerCase();
 
     let total = 0;
-
+    
     // Recorremos todas las filas con contenido de la tabla
-
+    
     for (let i = 1; i < tableReg.rows.length; i++) {
         // Si el td tiene la clase "noSearch" no se busca en su cntenido
 
@@ -86,6 +86,7 @@ function doSearch() {
         th.innerHTML = "No se han encontrado coincidencias";
     }
 }
+
 function deleteRows(){
 	var table = document.getElementById('datos');
 	var rowCount = table.rows.length;
